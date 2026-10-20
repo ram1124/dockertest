@@ -1,2 +1,2 @@
 FROM httpd
-COPY Gradient* /usr/local/apache2/htdocs/
+COPY Gradient.css index.html /usr/local/apache2/htdocs/
