@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/ram1124/dockertest.git'
+            }
+        }
+        stage('dockerbuild'){
+            steps{
+                sh 'docker build -t image1 .'
+            }
+        }
+        stage('RunDockercontainer'){
+            steps{
+                sh 'docker run -itd --name cont1 -p 1122:80 image1'
+            }
+        }
+    }
+}
