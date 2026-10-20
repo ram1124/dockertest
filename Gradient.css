@@ -1,0 +1,37 @@
+
+* {
+    margin:0;
+    padding:0;
+  }
+  
+  .container {
+   width: 100%;
+      height: 100vh;
+      display: flex;
+    flex-direction:column;
+      align-items: center;
+      justify-content: center;
+    font-size: 10vh;
+    font-family:sans-serif;
+    text-transform:uppercase;
+    background-color:#0E2431;
+   }
+  .container h1 {
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .2s;
+  }
+  .container p {
+    font-size: 5vh;
+     text-transform:lowercase;
+    font-weight:bold;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+  }
+ // .container h1:hover {
+ //   background-image: linear-gradient(43deg, #FFCC70  0%, #C850C0 46%, #4158D0 100%);
+ //   transform:scale(1.2);
+ // }
+  
